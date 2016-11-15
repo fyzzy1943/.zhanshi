@@ -20,7 +20,7 @@ body, #baidu_map, html {
     text-align: center; }
   #container section {
     position: absolute;
-    background-color: #e9e9e9;
+    background-color: #f1f2f3;
     width: 390px;
     /* Gecko browsers */
     /* Webkit browsers */
@@ -29,11 +29,11 @@ body, #baidu_map, html {
     box-shadow: 2px 2px 5px 1px #aaa;
     -webkit-box-shadow: 2px 2px 5px 1px #aaa;
     -moz-box-shadow: 2px 2px 5px 1px #aaa;
-    filter: alpha(opacity=87);
+    filter: alpha(opacity=76);
     /*IE滤镜，透明度50%*/
-    -moz-opacity: 0.87;
+    -moz-opacity: 0.76;
     /*Firefox私有，透明度50%*/
-    opacity: 0.87;
+    opacity: 0.76;
     /*其他，透明度50%*/ }
     #container section > h3 {
       margin: 0;
@@ -42,7 +42,10 @@ body, #baidu_map, html {
       color: #fff;
       font: 18px/18px "微软雅黑";
       width: 270px;
-      border-radius: 7px 0 7px 0; }
+      border-radius: 7px 0 7px 0;
+      box-shadow: 2px 2px 5px 1px #aaa;
+      -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+      -moz-box-shadow: 2px 2px 5px 1px #aaa; }
     #container section > ul > li {
       margin: 0.5em 0; }
   #container > nav {
@@ -108,7 +111,9 @@ body, #baidu_map, html {
   #company div.text {
     padding: 0 17px 0;
     text-align: justify;
-    text-indent: 2em; }
+    text-indent: 2em;
+    font: 16px/24px "微软雅黑";
+    text-shadow: 1px 1px 1px #ccc; }
 
 #office {
   top: 678px;

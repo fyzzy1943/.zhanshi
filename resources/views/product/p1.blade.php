@@ -48,7 +48,7 @@
       visualMap: {
         min: 0,
         max: 100,
-        left: 'left',
+        left: '317px',
         top: 'bottom',
         text: ['',''],           // 文本，默认为数值文本
         calculable: true

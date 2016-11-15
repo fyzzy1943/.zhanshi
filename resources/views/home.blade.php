@@ -11,7 +11,7 @@
   <div id="container">
     <section id="company">
       <h3>公司介绍</h3>
-      <img class="logo" src="/img/logo.png">
+      {{--<img class="logo" src="/img/logo.png">--}}
       <div class="text">
         <p>北京中地数讯文化传媒有限公司成立于2014年7月29日，是国土资源部直属事业单位中国国土资源报社下属科技公司，相继在湖南、广东和四川等省份成立办事处，2016年4月8日在北京股权交易中心挂牌。</p>
         <p>

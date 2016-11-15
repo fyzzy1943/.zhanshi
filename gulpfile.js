@@ -23,7 +23,7 @@ elixir(mix => {
     mix.sass('home.scss')
         .version('css/home.css');
 
-    // mix.browserSync({
-    //     proxy: 'http://zhanshi.x.com/'
-    // });
+    mix.browserSync({
+        proxy: 'http://zhanshi.x.com/'
+    });
 });
