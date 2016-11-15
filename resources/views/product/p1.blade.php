@@ -1,0 +1,221 @@
+@extends('layout')
+
+@section('head')
+  <link href="{{ elixir('css/main.css') }}" rel="stylesheet">
+  <script src="http://api.map.baidu.com/api?v=2.0&ak=NwZxAeKmrzegk1Zltsex5kwvrlAjsWyo"></script>
+  <script src="/js/echarts.js"></script>
+  <script src="/js/china.js"></script>
+@endsection
+
+@section('content')
+  <div id="p1">
+    <div id="chart1"></div>
+
+    <section id="introduction">
+      <h3>产品介绍</h3>
+      <div class="text">
+        <p>贯彻中央“八项规定”，精减传播成本，告别张贴布告和悬挂横幅，采用42吋落地触摸显示屏，实时以视频、文字、图片等全媒体形式进行分类公告展示。</p>
+        <p>落实国务院信息化建设文件精神，定制国土资源部及直属机关单位、各省厅、全国各级市县局的上情下达，实现国土资源信息共享。</p>
+        <p>提供国土资源系统及地矿地勘行业各类业务管理解决方案，定制工作动态、通知公告、办事流程、宣传普及政策法规、查询业务进度等应用，多元化满足全方位需求。</p>
+        <p>阳光国土，政务公开，转变信息公开方式，满足公众需求，实现国土资源信息化“大屏管理、大屏查询、大屏监管、大屏公开、大屏服务”的四级全服务目标。</p>
+      </div>
+    </section>
+
+    <section id="achievement">
+      <h3>终端信息</h3>
+      <div id="achievement1"></div>
+      <div id="achievement2"></div>
+    </section>
+  </div>
+
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/strobj.js"></script>
+
+  <script>
+    function randomData() {
+      return Math.round(Math.random()*50);
+    }
+    var chart1 = echarts.init(document.getElementById('chart1'));
+    option = {
+      title: '',
+      tooltip: {
+      },
+      legend: {
+//      orient: 'vertical',
+//      left: 'left',
+//      data:['iphone3','iphone4','iphone5']
+      },
+      visualMap: {
+        min: 0,
+        max: 100,
+        left: 'left',
+        top: 'bottom',
+        text: ['',''],           // 文本，默认为数值文本
+        calculable: true
+      },
+      toolbox: {
+        show: false,
+        orient: 'vertical',
+        left: 'right',
+        top: 'center',
+        feature: {
+          dataView: {readOnly: false},
+          restore: {},
+          saveAsImage: {}
+        }
+      },
+      series: [
+        {
+          name: '国土大屏',
+          type: 'map',
+          mapType: 'china',
+          roam: false,
+          label: {
+            normal: {
+              show: true
+            },
+            emphasis: {
+              show: true
+            }
+          },
+          data:[
+            {name: '北京',value: randomData() },
+            {name: '天津',value: randomData() },
+            {name: '上海',value: randomData() },
+            {name: '重庆',value: randomData() },
+            {name: '河北',value: randomData() },
+            {name: '河南',value: randomData() },
+            {name: '云南',value: randomData() },
+            {name: '辽宁',value: randomData() },
+            {name: '黑龙江',value: randomData() },
+            {name: '湖南',value: randomData() },
+            {name: '安徽',value: randomData() },
+            {name: '山东',value: randomData() },
+            {name: '新疆',value: randomData() },
+            {name: '江苏',value: randomData() },
+            {name: '浙江',value: randomData() },
+            {name: '江西',value: randomData() },
+            {name: '湖北',value: randomData() },
+            {name: '广西',value: randomData() },
+            {name: '甘肃',value: randomData() },
+            {name: '山西',value: randomData() },
+            {name: '内蒙古',value: randomData() },
+            {name: '陕西',value: randomData() },
+            {name: '吉林',value: randomData() },
+            {name: '福建',value: randomData() },
+            {name: '贵州',value: randomData() },
+            {name: '广东',value: randomData() },
+            {name: '青海',value: randomData() },
+            {name: '西藏',value: randomData() },
+            {name: '四川',value: randomData() },
+            {name: '宁夏',value: randomData() },
+            {name: '海南',value: randomData() },
+            {name: '台湾',value: randomData() },
+            {name: '香港',value: randomData() },
+            {name: '澳门',value: randomData() }
+          ]
+        }
+      ]
+    };
+
+    chart1.setOption(option);
+
+    // 基于准备好的dom，初始化echarts实例
+    var achievement1 = echarts.init(document.getElementById('achievement1'));
+
+    // 指定图表的配置项和数据
+    option = {
+      title: {
+        text: '终端分布情况',
+        left: 'center',
+        top: 0
+      },
+
+      tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+      },
+
+      visualMap: {
+        show: false,
+        min: 80,
+        max: 600,
+        inRange: {
+          colorLightness: [0, 1]
+        }
+      },
+      series : [
+        {
+          name:'终端分布情况',
+          type:'pie',
+          radius : '55%',
+          center: ['50%', '50%'],
+          data:[
+            {value:335, name:'华北区'},
+            {value:310, name:'华中区'},
+            {value:274, name:'东北区'},
+            {value:235, name:'华南区'},
+            {value:400, name:'西南区'}
+          ].sort(function (a, b) { return a.value - b.value}),
+          roseType: 'angle',
+          label: {
+            normal: {
+              textStyle: {
+                color: 'rgba(0, 0, 0, 0.9)'
+              }
+            }
+          },
+          labelLine: {
+            normal: {
+              lineStyle: {
+                color: 'rgba(0, 0, 0, 0.7)'
+              },
+              smooth: 0.2,
+              length: 10,
+              length2: 20
+            }
+          },
+          itemStyle: {
+            normal: {
+              color: '#c23531'
+            }
+          }
+        }
+      ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    achievement1.setOption(option);
+
+
+    var achievement2 = echarts.init(document.getElementById('achievement2'));
+
+    option = {
+      title: {
+        text: '终端在线率',
+        left: 'center',
+        top: 0
+      },
+      tooltip : {
+        formatter: "{a} <br/>{b} : {c}%"
+      },
+      toolbox: {
+        show: false,
+        feature: {
+          restore: {},
+          saveAsImage: {}
+        }
+      },
+      series: [
+        {
+          name: '终端在线率',
+          type: 'gauge',
+          detail: {formatter:'{value}%'},
+          data: [{value: 97, name: ''}]
+        }
+      ]
+    };
+
+    achievement2.setOption(option);
+  </script>
+@endsection
