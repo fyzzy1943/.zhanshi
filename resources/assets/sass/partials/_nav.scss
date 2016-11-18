@@ -86,6 +86,15 @@ nav.main{
 
     text-align: center;
     font: 32px/50px "微软雅黑";
+
+    a{
+      color: #000;
+      text-decoration: none;
+
+      &:hover{
+        text-shadow: 1px 1px 3px #aaa;
+      }
+    }
   }
 
   > ul.left{

@@ -45,8 +45,8 @@ class MainController extends Controller
             'dp' => ['p1', '国土大屏'],
             'yz' => ['p2', '移动一张图'],
             'zx' => ['p3', '国土在线'],
-            'kyw' => ['p4', '矿易网'],
-            'dyw' => ['p5', '地易网'],
+            'kyw' => ['p4', '<a href="http://ko1w.com/" target="_blank">矿易网</a>'],
+            'dyw' => ['p5', '<a href="http://di1w.com/" target="_blank">地易网</a>'],
         ];
 
         return view("product.{$links[$code][0]}", [

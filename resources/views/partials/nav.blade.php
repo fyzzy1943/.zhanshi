@@ -6,7 +6,7 @@
     <li><a href="{{ url('about') }}">关于我们</a></li>
   </ul>
   <div class="back"></div>
-  <h1>{{ $title or '中地数讯' }}</h1>
+  <h1>{!! $title or '中地数讯' !!}</h1>
   <ul class="right">
     <li><a href="{{ url('product/dp') }}">大屏</a></li>
     <li><a href="{{ url('product/yz') }}">一张图</a></li>

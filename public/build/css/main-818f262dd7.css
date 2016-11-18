@@ -58,11 +58,6 @@ nav.main {
     margin: 3px 0 0 -150px;
     text-align: center;
     font: 32px/50px "微软雅黑"; }
-    nav.main > h1 a {
-      color: #000;
-      text-decoration: none; }
-      nav.main > h1 a:hover {
-        text-shadow: 1px 1px 3px #aaa; }
   nav.main > ul.left {
     margin: 5px 0 0 43px;
     padding: 0;

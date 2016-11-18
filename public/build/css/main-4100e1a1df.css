@@ -62,7 +62,7 @@ nav.main {
       color: #000;
       text-decoration: none; }
       nav.main > h1 a:hover {
-        text-shadow: 1px 1px 3px #aaa; }
+        text-shadow: 1px 1px 3px #ccc; }
   nav.main > ul.left {
     margin: 5px 0 0 43px;
     padding: 0;

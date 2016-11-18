@@ -58,11 +58,6 @@ nav.main {
     margin: 3px 0 0 -150px;
     text-align: center;
     font: 32px/50px "微软雅黑"; }
-    nav.main > h1 a {
-      color: #000;
-      text-decoration: none; }
-      nav.main > h1 a:hover {
-        text-shadow: 1px 1px 3px #aaa; }
   nav.main > ul.left {
     margin: 5px 0 0 43px;
     padding: 0;
@@ -117,13 +112,13 @@ div#products {
     position: absolute;
     display: block;
     box-sizing: border-box;
-    background-color: #f7f8f9;
+    background-color: #e9e9e9;
     width: 370px;
     z-index: 10;
     border-radius: 7px;
-    box-shadow: 2px 2px 5px 1px #c7c8c9;
-    -webkit-box-shadow: 2px 2px 5px 1px #c7c8c9;
-    -moz-box-shadow: 2px 2px 5px 1px #c7c8c9;
+    box-shadow: 2px 2px 5px 1px #aaa;
+    -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+    -moz-box-shadow: 2px 2px 5px 1px #aaa;
     filter: alpha(opacity=87);
     -moz-opacity: 0.87;
     opacity: 0.87; }
@@ -323,8 +318,7 @@ div#p1 {
   div#p1 #achievement {
     top: 70px;
     right: 10px;
-    height: 610px;
-    margin-bottom: 20px; }
+    height: 610px; }
     div#p1 #achievement #achievement1 {
       width: 370px;
       height: 270px;
@@ -357,29 +351,19 @@ div#p2 {
   overflow-y: scroll; }
   div#p2 > img {
     position: absolute;
-    top: 70px;
-    left: 67px; }
-  div#p2 #demo {
-    position: absolute;
-    height: 500px;
-    width: 700px;
-    top: 90px;
-    left: 566px;
-    z-index: 10;
-    box-shadow: 2px 2px 7px 1px #ccc; }
-    div#p2 #demo img {
-      margin: 20px auto; }
+    top: 200px;
+    left: 500px; }
   div#p2 section {
     position: absolute;
     display: block;
     box-sizing: border-box;
-    background-color: #fafbfc;
+    background-color: #e9e9e9;
     width: 370px;
     z-index: 10;
     border-radius: 7px;
-    box-shadow: 2px 2px 7px 1px #ccc;
-    -webkit-box-shadow: 2px 2px 7px 1px #ccc;
-    -moz-box-shadow: 2px 2px 7px 1px #ccc;
+    box-shadow: 2px 2px 5px 1px #aaa;
+    -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+    -moz-box-shadow: 2px 2px 5px 1px #aaa;
     filter: alpha(opacity=87);
     -moz-opacity: 0.87;
     opacity: 0.87; }
@@ -395,6 +379,10 @@ div#p2 {
       /* Webkit browsers */
       border-radius: 7px;
       /* W3C syntax */ }
+    div#p2 section div.text {
+      padding: 0 17px 0;
+      text-align: justify;
+      text-indent: 2em; }
   div#p2 #achievement {
     top: 70px;
     right: 10px;
@@ -408,9 +396,9 @@ div#p2 {
       height: 270px;
       margin-top: 10px; }
   div#p2 #introduction {
-    top: 270px;
-    left: 83px;
-    width: 430px; }
+    top: 70px;
+    left: 10px;
+    width: 330px; }
     div#p2 #introduction div.text {
       padding: 0 17px 3px;
       text-align: justify;
@@ -437,13 +425,13 @@ div#p3 {
     position: absolute;
     display: block;
     box-sizing: border-box;
-    background-color: #fafbfc;
+    background-color: #e9e9e9;
     width: 370px;
     z-index: 10;
     border-radius: 7px;
-    box-shadow: 2px 2px 7px 1px #ccc;
-    -webkit-box-shadow: 2px 2px 7px 1px #ccc;
-    -moz-box-shadow: 2px 2px 7px 1px #ccc;
+    box-shadow: 2px 2px 5px 1px #aaa;
+    -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+    -moz-box-shadow: 2px 2px 5px 1px #aaa;
     filter: alpha(opacity=87);
     -moz-opacity: 0.87;
     opacity: 0.87; }
