@@ -20,7 +20,7 @@ class MainController extends Controller
 
     public function products()
     {
-        return view('products', [
+        return view('products_1', [
             'title' => '产品总览'
         ]);
     }
