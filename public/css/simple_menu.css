@@ -217,6 +217,7 @@
         color: #FFF;
         background: #02B1DC;
         border-radius: 5px;
+        -webkit-border-radius: 5px;
 }
 
 *html #menu li a:hover { /* IE6 only */

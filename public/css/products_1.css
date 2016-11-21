@@ -31,13 +31,13 @@ body {
   text-transform: uppercase;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8); }
   .header #site_title {
-    width: 203px;
+    width: 197px;
     height: 51px;
     position: absolute;
     top: 28px;
     right: 50px; }
     .header #site_title img {
-      width: 203px;
+      width: 197px;
       height: 51px;
       float: left; }
 

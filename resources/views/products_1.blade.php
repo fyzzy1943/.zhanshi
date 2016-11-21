@@ -22,7 +22,16 @@
 
     <ol id="menu">
       <li><a href="/">公司介绍</a></li>
-      <li class="active_menu_item"><a href="/products">产品总览</a></li>
+      <li class="active_menu_item">
+        <a href="/products">产品总览</a>
+        <ol>
+          <li><a href="#">国土大屏</a></li>
+          <li><a href="#">国土在线</a></li>
+          <li><a href="#">移动一张图</a></li>
+          <li><a href="#">地易网</a></li>
+          <li><a href="#">矿易网</a></li>
+        </ol>
+      </li>
       <li><a href="/about">关于我们</a></li>
     </ol>
   </div>
