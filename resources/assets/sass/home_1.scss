@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  overflow: hidden;
+  background-image: radial-gradient(ellipse farthest-corner at center top, #23233f 0%, #000000 60%);
+
+  position: relative;
+}
+
+#title {
+  position: absolute;
+  display: block;
+  top: 100px;
+
+  width: 100%;
+  text-align: center;
+
+  font-size: 123px;
+  font-family: "微软雅黑";
+  //text-shadow: 1px 1px 37px #fff;
+  text-shadow: 3px 3px 3px #666,
+  3px 3px 20px #00f,
+  3px 3px 30px #fff,
+  3px 3px 40px #fff,
+  3px 3px 70px #eee,
+  3px 3px 80px #ddd;
+
+  color: #fff;
+}
+
+#logo {
+  position: absolute;
+  display: block;
+
+  width: 200px;
+  left: 50%;
+  bottom: 30px;
+  margin-left: -100px;
+
+  -webkit-animation:y-spin 5s infinite linear;
+}
+
+@-webkit-keyframes y-spin {
+  0%    { -webkit-transform: rotateY(0deg); }
+  50%   { -webkit-transform: rotateY(180deg); }
+  100%  { -webkit-transform: rotateY(360deg); }
+}

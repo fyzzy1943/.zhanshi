@@ -13,7 +13,7 @@ class MainController extends Controller
 
     public function home()
     {
-        return view('home', [
+        return view('home_1', [
             'title' => '公司总览'
         ]);
     }
