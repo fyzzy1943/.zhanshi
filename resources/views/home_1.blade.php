@@ -52,7 +52,7 @@ void main(void) {
 
 <span id="title">国土资源全媒体<br>云服务平台</span>
 
-<a href=""><img id="logo" src="/img/logo1.png"></a>
+<a href="/products"><img id="logo" src="/img/logo1.png"></a>
 {{--<canvas id="text" width="1470" height="310"></canvas>--}}
 
 {{--<script src="/js/home/text.js"></script>--}}

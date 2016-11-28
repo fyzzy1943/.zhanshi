@@ -26,6 +26,31 @@
       <div id="achievement1"></div>
       <div id="achievement2"></div>
     </section>
+
+    <div id="demo">
+      <div id="c1">
+        <video src="/video/1.mp4" autoplay></video>
+      </div>
+      <div id="c2">
+        <img src="/img/logo1.png">
+        <img src="/img/tianqi.png">
+        <marquee>今天是个好天气。今天是个好天气。今天是个好天气。</marquee>
+      </div>
+      <div id="c3">
+        <div id="c4">
+          <img src="/img/p1/01.jpg">
+        </div>
+        <div id="c5">
+          <img src="/img/p1/xia/01.jpg">
+        </div>
+        <div id="c6">
+          <img src="/img/p1/xia/02.png">
+        </div>
+      </div>
+      <div id="c7">
+
+      </div>
+    </div>
   </div>
 
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
@@ -211,7 +236,7 @@
           name: '终端在线率',
           type: 'gauge',
           detail: {formatter:'{value}%'},
-          data: [{value: 97, name: ''}]
+          data: [{value: 100, name: ''}]
         }
       ]
     };

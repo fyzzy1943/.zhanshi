@@ -44,7 +44,7 @@
         <p>贯彻中央“八项规定”，精减传播成本，告别张贴布告和悬挂横幅，采用42吋落地触摸显示屏，实时以视频、文字、图片等全媒体形式进行分类公告展示。</p>
         <p>落实国务院信息化建设文件精神，定制国土资源部及直属机关单位、各省厅、全国各级市县局的上情下达，实现国土资源信息共享。</p>
         <p>提供国土资源系统及地矿地勘行业各类业务管理解决方案，定制工作动态、通知公告、办事流程、宣传普及政策法规、查询业务进度等应用，多元化满足全方位需求。</p>
-        <p style="text-align:right; margin-right: 16px"><a href="#" class="button">More Info</a></p>
+        <p style="text-align:right; margin-right: 16px"><a href="/product/dp" class="button">More Info</a></p>
       </section>
 
       <section>

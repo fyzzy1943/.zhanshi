@@ -271,6 +271,11 @@ div#about {
     width: 370px;
     margin-left: -185px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
 body, html {
   width: 100%;
   height: 100%;
@@ -314,25 +319,31 @@ div#p1 {
       width: 100%;
       /* Gecko browsers */
       /* Webkit browsers */
-      border-radius: 7px;
+      border-radius: 7px 7px 0 0;
       /* W3C syntax */ }
     div#p1 section div.text {
       padding: 0 17px 0;
       text-align: justify;
       text-indent: 2em; }
   div#p1 #achievement {
-    top: 70px;
-    right: 10px;
-    height: 610px;
+    top: 770px;
+    left: 50%;
+    width: 1000px;
+    height: 270px;
+    margin-left: -500px;
     margin-bottom: 20px; }
     div#p1 #achievement #achievement1 {
+      display: block;
       width: 370px;
       height: 270px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      float: left; }
     div#p1 #achievement #achievement2 {
+      display: block;
       width: 370px;
       height: 270px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      float: left; }
   div#p1 #introduction {
     top: 70px;
     left: 10px;
@@ -341,6 +352,80 @@ div#p1 {
       padding: 0 17px 3px;
       text-align: justify;
       text-indent: 0; }
+  div#p1 #demo {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-color: #eee;
+    top: 70px;
+    right: 10px;
+    border: 1px red solid;
+    width: 360px;
+    height: 640px; }
+    div#p1 #demo #c1 {
+      box-sizing: border-box;
+      width: 360px;
+      height: 198px;
+      border-bottom: 1px red solid;
+      overflow: hidden; }
+      div#p1 #demo #c1 video {
+        margin-top: -37px;
+        width: 360px; }
+    div#p1 #demo #c2 {
+      display: -webkit-box;
+      display: flex;
+      box-sizing: border-box;
+      width: 360px;
+      height: 47px;
+      border-bottom: 1px red solid; }
+      div#p1 #demo #c2 img {
+        width: auto;
+        height: 35px;
+        margin: 6px 0 0 7px;
+        float: left;
+        box-shadow: 1px 1px 5px 2px #ccc;
+        -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+        -moz-box-shadow: 1px 1px 5px 2px #ccc; }
+      div#p1 #demo #c2 marquee {
+        height: 35px;
+        margin: 6px 7px 0 7px;
+        -webkit-box-flex: 1;
+        flex: 1;
+        float: left;
+        font: 18px/35px "微软雅黑";
+        box-shadow: 1px 1px 5px 2px #ccc;
+        -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+        -moz-box-shadow: 1px 1px 5px 2px #ccc; }
+    div#p1 #demo #c3 {
+      box-sizing: border-box;
+      width: 320px;
+      height: 395px;
+      border-right: 1px red solid;
+      float: left; }
+      div#p1 #demo #c3 img {
+        width: 100%;
+        height: 100%; }
+    div#p1 #demo #c4 {
+      box-sizing: border-box;
+      width: 319px;
+      height: 305px;
+      border-bottom: 1px red solid;
+      float: left; }
+    div#p1 #demo #c5 {
+      box-sizing: border-box;
+      width: 160px;
+      height: 90px;
+      float: left;
+      border-right: 1px red solid; }
+    div#p1 #demo #c6 {
+      box-sizing: border-box;
+      width: 159px;
+      height: 90px;
+      float: left; }
+    div#p1 #demo #c7 {
+      box-sizing: border-box;
+      width: 40px;
+      height: 395px; }
 
 body, html {
   width: 100%;

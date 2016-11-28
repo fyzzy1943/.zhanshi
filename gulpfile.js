@@ -17,18 +17,18 @@ elixir(mix => {
     // mix.sass('app.scss')
     //    .webpack('app.js');
 
-    // mix.sass('main.scss')
-    //     .version('css/main.css');
-    //
+    mix.sass('main.scss')
+        .version('css/main.css');
+
     // mix.sass('home.scss')
     //     .version('css/home.css');
 
     // mix.sass('products_1.scss')
     //     .version('css/products_1.css');
     //
-    // mix.browserSync({
-    //     proxy: 'http://zhanshi.x.com/'
-    // });
+    mix.browserSync({
+        proxy: 'http://zhanshi.x.com/'
+    });
 
-    mix.sass('home_1.scss');
+    // mix.sass('home_1.scss');
 });

@@ -7,6 +7,12 @@ $products__p6_height : 207px;
 
 $width_section : 370px;
 
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 body, html{
   width: 100%;
   height: 100%;
@@ -62,9 +68,9 @@ div#p1{
       color: #fff;
       font: 18px/18px "微软雅黑";
       width: 100%;
-      -moz-border-radius: 7px;      /* Gecko browsers */
-      -webkit-border-radius: 7px;   /* Webkit browsers */
-      border-radius:7px;            /* W3C syntax */
+      -moz-border-radius: 7px 7px 0 0;      /* Gecko browsers */
+      -webkit-border-radius: 7px 7px 0 0;   /* Webkit browsers */
+      border-radius: 7px 7px 0 0;            /* W3C syntax */
     }
 
     div.text{
@@ -75,22 +81,28 @@ div#p1{
   }
 
   #achievement{
-    top: 70px;
-    right: 10px;
-    height: 610px;
+    top: 770px;
+    left: 50%;
+    width: 1000px;
+    height: 270px;
 
+    margin-left: -500px;
     margin-bottom: 20px;
 
     #achievement1{
+      display: block;
       width: $width_section;
       height: 270px;
       margin-top: 10px;
+      float: left;
     }
 
     #achievement2{
+      display: block;
       width: $width_section;
       height: 270px;
       margin-top: 10px;
+      float: left;
     }
   }
 
@@ -103,6 +115,106 @@ div#p1{
       padding: 0 17px 3px;
       text-align: justify;
       text-indent: 0;
+    }
+  }
+
+  #demo{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    background-color: #eee;
+
+    top: 70px;
+    right: 10px;
+    border: 1px red solid;
+
+    width: 360px;
+    height: 640px;
+
+    #c1{
+      box-sizing: border-box;
+      width: 360px;
+      height: 198px;
+      border-bottom: 1px red solid;
+      overflow: hidden;
+
+      video{
+        margin-top: -37px;
+        width: 360px;
+      }
+    }
+
+    #c2{
+      display: flex;
+      box-sizing: border-box;
+      width: 360px;
+      height: 47px;
+      border-bottom: 1px red solid;
+
+      img{
+        width: auto;
+        height: 35px;
+        margin: 6px 0 0 7px;
+        float: left;
+
+        box-shadow: 1px 1px 5px 2px #ccc;
+        -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+        -moz-box-shadow: 1px 1px 5px 2px #ccc;
+      }
+
+      marquee{
+        height: 35px;
+        margin: 6px 7px 0 7px;
+        flex: 1;
+        float: left;
+        font: 18px/35px "微软雅黑";
+
+        box-shadow: 1px 1px 5px 2px #ccc;
+        -webkit-box-shadow: 1px 1px 5px 2px #ccc;
+        -moz-box-shadow: 1px 1px 5px 2px #ccc;
+      }
+    }
+
+    #c3{
+      box-sizing: border-box;
+      width: 320px;
+      height: 395px;
+      border-right: 1px red solid;
+      float: left;
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #c4{
+      box-sizing: border-box;
+      width: 319px;
+      height: 305px;
+      border-bottom: 1px red solid;
+      float: left;
+    }
+
+    #c5{
+      box-sizing: border-box;
+      width: 160px;
+      height: 90px;
+      float: left;
+      border-right: 1px red solid;
+    }
+
+    #c6{
+      box-sizing: border-box;
+      width: 159px;
+      height: 90px;
+      float: left;
+    }
+
+    #c7{
+      box-sizing: border-box;
+      width: 40px;
+      height: 395px;
     }
   }
 }
