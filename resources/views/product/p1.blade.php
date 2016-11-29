@@ -2,6 +2,7 @@
 
 @section('head')
   <link href="{{ elixir('css/main.css') }}" rel="stylesheet">
+  <link href="/css/pageSwitch.min.css" rel="stylesheet">
   <script src="http://api.map.baidu.com/api?v=2.0&ak=NwZxAeKmrzegk1Zltsex5kwvrlAjsWyo"></script>
   <script src="/js/echarts.js"></script>
   <script src="/js/china.js"></script>
@@ -22,14 +23,13 @@
     </section>
 
     <section id="achievement">
-      <h3>终端信息</h3>
       <div id="achievement1"></div>
       <div id="achievement2"></div>
     </section>
 
     <div id="demo">
       <div id="c1">
-        <video src="/video/1.mp4" autoplay></video>
+        <video src="/video/1.mp4" autoplay loop></video>
       </div>
       <div id="c2">
         <img src="/img/logo1.png">
@@ -38,7 +38,12 @@
       </div>
       <div id="c3">
         <div id="c4">
-          <img src="/img/p1/01.jpg">
+          <div class="sections">
+            <div class="section" id="section0"></div>
+            <div class="section" id="section1"></div>
+            <div class="section" id="section2"></div>
+            <div class="section" id="section3"></div>
+          </div>
         </div>
         <div id="c5">
           <img src="/img/p1/xia/01.jpg">
@@ -48,15 +53,32 @@
         </div>
       </div>
       <div id="c7">
-
+        <img src="/img/p1/btn/u.png">
+        <div id="nav">
+          <img src="/img/p1/btn/1.png">
+          <img src="/img/p1/btn/2.png">
+          <img src="/img/p1/btn/3.png">
+          <img src="/img/p1/btn/4.png">
+          <img src="/img/p1/btn/5.png">
+        </div>
+        <img src="/img/p1/btn/d.png">
       </div>
     </div>
   </div>
 
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/pageSwitch.min.js"></script>
   <script src="/js/strobj.js"></script>
 
   <script>
+    $("#c4").PageSwitch({
+      direction:'horizontal',
+      easing:'ease-in',
+      duration:1000,
+      autoPlay:true,
+      loop:'true'
+    });
+
     function randomData() {
       return Math.round(Math.random()*50);
     }

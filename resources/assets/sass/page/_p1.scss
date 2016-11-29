@@ -85,9 +85,18 @@ div#p1{
     left: 50%;
     width: 1000px;
     height: 270px;
+    background-color: #fcfcfc;
 
     margin-left: -500px;
     margin-bottom: 20px;
+
+    //filter:alpha(opacity=67);
+    //-moz-opacity:0.67;
+    //opacity:0.67;
+
+    box-shadow: 1px 1px 5px 5px #ccc;
+    -webkit-box-shadow: 1px 1px 5px 5px #ccc;
+    -moz-box-shadow: 1px 1px 5px 5px #ccc;
 
     #achievement1{
       display: block;
@@ -126,7 +135,6 @@ div#p1{
 
     top: 70px;
     right: 10px;
-    border: 1px red solid;
 
     width: 360px;
     height: 640px;
@@ -135,7 +143,6 @@ div#p1{
       box-sizing: border-box;
       width: 360px;
       height: 198px;
-      border-bottom: 1px red solid;
       overflow: hidden;
 
       video{
@@ -149,7 +156,6 @@ div#p1{
       box-sizing: border-box;
       width: 360px;
       height: 47px;
-      border-bottom: 1px red solid;
 
       img{
         width: auto;
@@ -179,7 +185,6 @@ div#p1{
       box-sizing: border-box;
       width: 320px;
       height: 395px;
-      border-right: 1px red solid;
       float: left;
 
       img{
@@ -192,8 +197,36 @@ div#p1{
       box-sizing: border-box;
       width: 319px;
       height: 305px;
-      border-bottom: 1px red solid;
       float: left;
+
+      position: relative;
+      overflow: hidden;
+
+      .sections,.section {
+        height:100%;
+      }
+      .sections {
+        position: relative;
+      }
+      .section {
+        background-color: #000;
+        background-size: cover;
+        background-position: 50% 50%;
+        text-align: center;
+        color: white;
+      }
+      #section0 {
+        background-image: url('/img/p1/01.jpg');
+      }
+      #section1 {
+        background-image: url('/img/p1/02.jpg');
+      }
+      #section2 {
+        background-image: url('/img/p1/03.jpg');
+      }
+      #section3 {
+        background-image: url('/img/p1/04.jpg');
+      }
     }
 
     #c5{
@@ -201,7 +234,6 @@ div#p1{
       width: 160px;
       height: 90px;
       float: left;
-      border-right: 1px red solid;
     }
 
     #c6{
@@ -215,6 +247,28 @@ div#p1{
       box-sizing: border-box;
       width: 40px;
       height: 395px;
+      float: left;
+
+      >img{
+        width: 38px;
+        height: 19px;
+        margin: 2px 0 0 1px;
+      }
+
+      #nav{
+        height: 349px;
+
+        img{
+          width: 30px;
+          margin: 5px 0 0 5px;
+
+          overflow: hidden;
+
+          &:first-child{
+            margin-top: 0;
+          }
+        }
+      }
     }
   }
 }
