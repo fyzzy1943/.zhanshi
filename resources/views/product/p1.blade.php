@@ -6,6 +6,8 @@
   <script src="http://api.map.baidu.com/api?v=2.0&ak=NwZxAeKmrzegk1Zltsex5kwvrlAjsWyo"></script>
   <script src="/js/echarts.js"></script>
   <script src="/js/china.js"></script>
+
+  <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 @endsection
 
 @section('content')
@@ -27,17 +29,19 @@
       <div id="achievement2"></div>
     </section>
 
+    <div id="demo_mask"></div>
+
     <div id="demo">
-      <div id="c1">
+      <div class="c1">
         <video src="/video/1.mp4" autoplay loop></video>
       </div>
-      <div id="c2">
+      <div class="c2">
         <img src="/img/logo1.png">
         <img src="/img/tianqi.png">
         <marquee>今天是个好天气。今天是个好天气。今天是个好天气。</marquee>
       </div>
-      <div id="c3">
-        <div id="c4">
+      <div class="c3">
+        <div class="c4">
           <div class="sections">
             <div class="section" id="section0"></div>
             <div class="section" id="section1"></div>
@@ -45,14 +49,14 @@
             <div class="section" id="section3"></div>
           </div>
         </div>
-        <div id="c5">
+        <div class="c5">
           <img src="/img/p1/xia/01.jpg">
         </div>
-        <div id="c6">
+        <div class="c6">
           <img src="/img/p1/xia/02.png">
         </div>
       </div>
-      <div id="c7">
+      <div class="c7">
         <img src="/img/p1/btn/u.png">
         <div id="nav">
           <img src="/img/p1/btn/1.png">
@@ -66,12 +70,34 @@
     </div>
   </div>
 
+  @include('product.p1.modal')
+
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
   <script src="/js/pageSwitch.min.js"></script>
   <script src="/js/strobj.js"></script>
 
+  <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <script>
-    $("#c4").PageSwitch({
+    $(function(){
+      $('.c1').click(function(){
+        $('#s1').modal('show');
+      });
+      $('.c2').click(function(){
+        $('#s2').modal('show');
+      });
+      $('.c4').click(function(){
+        $('#s3').modal('show');
+      });
+      $('.c5,.c6').click(function(){
+        $('#s4').modal('show');
+      });
+      $('.c7').click(function(){
+        $('#s5').modal('show');
+      });
+    });
+
+    $(".c4").PageSwitch({
       direction:'horizontal',
       easing:'ease-in',
       duration:1000,

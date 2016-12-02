@@ -365,21 +365,21 @@ div#p1 {
     right: 10px;
     width: 360px;
     height: 640px; }
-    div#p1 #demo #c1 {
+    div#p1 #demo .c1 {
       box-sizing: border-box;
       width: 360px;
       height: 198px;
       overflow: hidden; }
-      div#p1 #demo #c1 video {
+      div#p1 #demo .c1 video {
         margin-top: -37px;
         width: 360px; }
-    div#p1 #demo #c2 {
+    div#p1 #demo .c2 {
       display: -webkit-box;
       display: flex;
       box-sizing: border-box;
       width: 360px;
       height: 47px; }
-      div#p1 #demo #c2 img {
+      div#p1 #demo .c2 img {
         width: auto;
         height: 35px;
         margin: 6px 0 0 7px;
@@ -387,7 +387,7 @@ div#p1 {
         box-shadow: 1px 1px 5px 2px #ccc;
         -webkit-box-shadow: 1px 1px 5px 2px #ccc;
         -moz-box-shadow: 1px 1px 5px 2px #ccc; }
-      div#p1 #demo #c2 marquee {
+      div#p1 #demo .c2 marquee {
         height: 35px;
         margin: 6px 7px 0 7px;
         -webkit-box-flex: 1;
@@ -397,65 +397,65 @@ div#p1 {
         box-shadow: 1px 1px 5px 2px #ccc;
         -webkit-box-shadow: 1px 1px 5px 2px #ccc;
         -moz-box-shadow: 1px 1px 5px 2px #ccc; }
-    div#p1 #demo #c3 {
+    div#p1 #demo .c3 {
       box-sizing: border-box;
       width: 320px;
       height: 395px;
       float: left; }
-      div#p1 #demo #c3 img {
+      div#p1 #demo .c3 img {
         width: 100%;
         height: 100%; }
-    div#p1 #demo #c4 {
+    div#p1 #demo .c4 {
       box-sizing: border-box;
       width: 319px;
       height: 305px;
       float: left;
       position: relative;
       overflow: hidden; }
-      div#p1 #demo #c4 .sections, div#p1 #demo #c4 .section {
+      div#p1 #demo .c4 .sections, div#p1 #demo .c4 .section {
         height: 100%; }
-      div#p1 #demo #c4 .sections {
+      div#p1 #demo .c4 .sections {
         position: relative; }
-      div#p1 #demo #c4 .section {
+      div#p1 #demo .c4 .section {
         background-color: #000;
         background-size: cover;
         background-position: 50% 50%;
         text-align: center;
         color: white; }
-      div#p1 #demo #c4 #section0 {
+      div#p1 #demo .c4 #section0 {
         background-image: url("/img/p1/01.jpg"); }
-      div#p1 #demo #c4 #section1 {
+      div#p1 #demo .c4 #section1 {
         background-image: url("/img/p1/02.jpg"); }
-      div#p1 #demo #c4 #section2 {
+      div#p1 #demo .c4 #section2 {
         background-image: url("/img/p1/03.jpg"); }
-      div#p1 #demo #c4 #section3 {
+      div#p1 #demo .c4 #section3 {
         background-image: url("/img/p1/04.jpg"); }
-    div#p1 #demo #c5 {
+    div#p1 #demo .c5 {
       box-sizing: border-box;
       width: 160px;
       height: 90px;
       float: left; }
-    div#p1 #demo #c6 {
+    div#p1 #demo .c6 {
       box-sizing: border-box;
       width: 159px;
       height: 90px;
       float: left; }
-    div#p1 #demo #c7 {
+    div#p1 #demo .c7 {
       box-sizing: border-box;
       width: 40px;
       height: 395px;
       float: left; }
-      div#p1 #demo #c7 > img {
+      div#p1 #demo .c7 > img {
         width: 38px;
         height: 19px;
         margin: 2px 0 0 1px; }
-      div#p1 #demo #c7 #nav {
+      div#p1 #demo .c7 #nav {
         height: 349px; }
-        div#p1 #demo #c7 #nav img {
+        div#p1 #demo .c7 #nav img {
           width: 30px;
           margin: 5px 0 0 5px;
           overflow: hidden; }
-          div#p1 #demo #c7 #nav img:first-child {
+          div#p1 #demo .c7 #nav img:first-child {
             margin-top: 0; }
 
 body, html {
