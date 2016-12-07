@@ -38,7 +38,7 @@ nav.main{
 
   width: 1000px;
   height: 40px;
-  top: 0;
+  top: -45px;
   left: 50%;
   margin-left: -500px;
 
@@ -144,4 +144,14 @@ nav.main{
       }
     }
   }
+}
+
+.nav-down {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }

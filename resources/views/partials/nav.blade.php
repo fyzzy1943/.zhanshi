@@ -15,3 +15,19 @@
     <li><a href="{{ url('product/dyw') }}">地易网</a></li>
   </ul>
 </nav>
+
+<script>
+  $(function() {
+    var nav = false;
+
+    $('nav.main h1').click(function() {
+      if (nav) {
+        $('nav.main').animate({top:"-45px"});
+        nav = false;
+      } else {
+        $('nav.main').animate({top:"0"});
+        nav = true;
+      }
+    });
+  });
+</script>

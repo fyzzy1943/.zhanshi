@@ -7,3 +7,7 @@ Route::get('vision', 'MainController@vision');
 Route::get('about', 'MainController@about');
 
 Route::get('product/{code}', 'MainController@product');
+
+Route::get('test', function() {
+    return view('layout');
+});
