@@ -13,17 +13,54 @@
 @section('content')
   <div id="p1">
 
-    <button class="toggle-id-1 nav-down"></button>
-
     <div id="chart1"></div>
 
     <section id="introduction">
       <h3>产品介绍</h3>
-      <div class="text">
-        <p>贯彻中央“八项规定”，精减传播成本，告别张贴布告和悬挂横幅，采用42吋落地触摸显示屏，实时以视频、文字、图片等全媒体形式进行分类公告展示。</p>
-        <p>落实国务院信息化建设文件精神，定制国土资源部及直属机关单位、各省厅、全国各级市县局的上情下达，实现国土资源信息共享。</p>
-        <p>提供国土资源系统及地矿地勘行业各类业务管理解决方案，定制工作动态、通知公告、办事流程、宣传普及政策法规、查询业务进度等应用，多元化满足全方位需求。</p>
-        <p>阳光国土，政务公开，转变信息公开方式，满足公众需求，实现国土资源信息化“大屏管理、大屏查询、大屏监管、大屏公开、大屏服务”的四级全服务目标。</p>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                项目介绍
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>贯彻中央“八项规定”，精减传播成本，告别张贴布告和悬挂横幅，采用42吋落地触摸显示屏，实时以视频、文字、图片等全媒体形式进行分类公告展示。</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                项目介绍
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <p>落实国务院信息化建设文件精神，定制国土资源部及直属机关单位、各省厅、全国各级市县局的上情下达，实现国土资源信息共享。</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                项目介绍
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <p>提供国土资源系统及地矿地勘行业各类业务管理解决方案，定制工作动态、通知公告、办事流程、宣传普及政策法规、查询业务进度等应用，多元化满足全方位需求。</p>
+              <p>阳光国土，政务公开，转变信息公开方式，满足公众需求，实现国土资源信息化“大屏管理、大屏查询、大屏监管、大屏公开、大屏服务”的四级全服务目标。</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
