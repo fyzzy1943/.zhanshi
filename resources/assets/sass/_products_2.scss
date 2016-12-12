@@ -1,4 +1,4 @@
-
+$pros2__margin_bottom : 55px;
 
 div#pros2{
   position: relative;
@@ -8,4 +8,156 @@ div#pros2{
   //background-color: #f1f2f3;
   overflow-y: scroll;
 
+  #com{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 160px;
+    top: 120px;
+    margin-bottom: $pros2__margin_bottom;
+
+    border-radius: 5px;
+
+    box-shadow:0 0 1px 1px #bbb,
+    0 0 3px 3px #ccc,
+    0 0 7px 7px #ddd,
+    0 0 11px 11px #eee;
+  }
+
+  #ps1{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 600px;
+    top: 30px;
+    margin-bottom: $pros2__margin_bottom;
+
+    border-radius: 5px;
+
+    box-shadow:0 0 1px 1px #bbb,
+    0 0 3px 3px #ccc,
+    0 0 7px 7px #ddd,
+    0 0 11px 11px #eee;
+    //-webkit-box-shadow:2px 2px 5px 1px #aaa;
+    //-moz-box-shadow:2px 2px 5px 1px #aaa;
+  }
+
+  #ps2{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 370px;
+    left: 200px;
+    top: 430px;
+    margin-bottom: $pros2__margin_bottom;
+
+    box-shadow:0 0 1px 1px #bbb,
+    0 0 5px 5px #ccc,
+    0 0 9px 9px #ddd,
+    0 0 17px 17px #eee;
+  }
+
+  #ps3{
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 750px;
+    top: 530px;
+    margin-bottom: $pros2__margin_bottom;
+
+    border-radius: 15px;
+
+    box-shadow:0 0 1px 1px #bbb,
+    0 0 5px 5px #ccc,
+    0 0 9px 9px #ddd,
+    0 0 17px 17px #eee;
+  }
+
+  #ps4{
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 30px;
+    top: 960px;
+    margin-bottom: $pros2__margin_bottom;
+
+    border-radius: 3px;
+
+    box-shadow:0 0 3px 3px #bbb,
+    0 0 9px 9px #ccc,
+    0 0 17px 17px #ddd,
+    0 0 31px 31px #eee;
+  }
+
+  #ps5{
+    display: none;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: 90px;
+    top: 1390px;
+    margin-bottom: $pros2__margin_bottom;
+
+    border-radius: 5px;
+
+    box-shadow:0 0 1px 1px #bbb,
+    0 0 3px 3px #ccc,
+    0 0 7px 7px #ddd,
+    0 0 11px 11px #eee;
+  }
+}
+
+$pros2__nav_div_show_height : 25px;
+$pros2__nav_div_height : 250px;
+nav.pros2-nav{
+  position: fixed;
+  width: 100%;
+  height: $pros2__nav_div_show_height;
+  bottom: 0;
+
+  background-color: transparent;
+
+  div{
+    box-sizing: border-box;
+    width: 20%;
+    height: $pros2__nav_div_height;
+    float: left;
+    margin-top: $pros2__nav_div_show_height;
+
+    text-align: center;
+
+    h3{
+      font-size: 18px;
+      line-height: $pros2__nav_div_show_height;
+      margin: 0;
+      padding: 0;
+    }
+
+    //&:hover{
+    //  margin-top: $pros2__nav_div_show_height - $pros2__nav_div_height;
+    //}
+  }
+
+  #nav1{
+    background-color: #2a88bd;
+  }
+
+  #nav2{
+    background-color: #2ab27b;
+  }
+
+  #nav3{
+    background-color: #2a88bd;
+  }
+
+  #nav4{
+    background-color: #2ab27b;
+  }
+
+  #nav5{
+    background-color: #d58512;
+  }
 }

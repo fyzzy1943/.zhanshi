@@ -8,10 +8,12 @@
   <script src="/js/china.js"></script>
 
   <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
 @endsection
 
 @section('content')
-  <div id="p1">
+  <div id="p1" class="animated slideInRight">
 
     <div id="chart1"></div>
 

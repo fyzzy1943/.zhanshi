@@ -64,20 +64,21 @@ nav.main {
       nav.main > h1 a:hover {
         text-shadow: 1px 1px 3px #aaa; }
   nav.main > ul.left {
-    margin: 5px 0 0 43px;
+    margin: 6px 0 0 43px;
     padding: 0;
     list-style-type: none; }
     nav.main > ul.left > li {
       width: auto;
       float: left;
-      margin-left: 10px; }
+      margin-left: 23px; }
       nav.main > ul.left > li a {
         color: #000;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 18px; }
         nav.main > ul.left > li a:hover {
           text-shadow: 3px 3px 3px #aaa; }
   nav.main > ul.right {
-    margin: 5px 0 0 670px;
+    margin: 6px 0 0 667px;
     padding: 0;
     list-style-type: none; }
     nav.main > ul.right > li {
@@ -88,7 +89,8 @@ nav.main {
         margin-left: 0; }
       nav.main > ul.right > li a {
         color: #000;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 16px; }
         nav.main > ul.right > li a:hover {
           text-shadow: 3px 3px 3px #aaa; }
 
@@ -278,6 +280,99 @@ div#about {
     height: auto;
     width: 370px;
     margin-left: -185px; }
+
+div#pros2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; }
+  div#pros2 #com {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 160px;
+    top: 120px;
+    margin-bottom: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #bbb, 0 0 3px 3px #ccc, 0 0 7px 7px #ddd, 0 0 11px 11px #eee; }
+  div#pros2 #ps1 {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 600px;
+    top: 30px;
+    margin-bottom: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #bbb, 0 0 3px 3px #ccc, 0 0 7px 7px #ddd, 0 0 11px 11px #eee; }
+  div#pros2 #ps2 {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 370px;
+    left: 200px;
+    top: 430px;
+    margin-bottom: 55px;
+    box-shadow: 0 0 1px 1px #bbb, 0 0 5px 5px #ccc, 0 0 9px 9px #ddd, 0 0 17px 17px #eee; }
+  div#pros2 #ps3 {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 750px;
+    top: 530px;
+    margin-bottom: 55px;
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px #bbb, 0 0 5px 5px #ccc, 0 0 9px 9px #ddd, 0 0 17px 17px #eee; }
+  div#pros2 #ps4 {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 30px;
+    top: 960px;
+    margin-bottom: 55px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 3px #bbb, 0 0 9px 9px #ccc, 0 0 17px 17px #ddd, 0 0 31px 31px #eee; }
+  div#pros2 #ps5 {
+    display: none;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    left: 90px;
+    top: 1390px;
+    margin-bottom: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #bbb, 0 0 3px 3px #ccc, 0 0 7px 7px #ddd, 0 0 11px 11px #eee; }
+
+nav.pros2-nav {
+  position: fixed;
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  background-color: transparent; }
+  nav.pros2-nav div {
+    box-sizing: border-box;
+    width: 20%;
+    height: 250px;
+    float: left;
+    margin-top: 25px;
+    text-align: center; }
+    nav.pros2-nav div h3 {
+      font-size: 18px;
+      line-height: 25px;
+      margin: 0;
+      padding: 0; }
+  nav.pros2-nav #nav1 {
+    background-color: #2a88bd; }
+  nav.pros2-nav #nav2 {
+    background-color: #2ab27b; }
+  nav.pros2-nav #nav3 {
+    background-color: #2a88bd; }
+  nav.pros2-nav #nav4 {
+    background-color: #2ab27b; }
+  nav.pros2-nav #nav5 {
+    background-color: #d58512; }
 
 * {
   margin: 0;
