@@ -31,6 +31,7 @@ div#p1{
 
   //background-color: #f1f2f3;
   overflow-y: scroll;
+  margin-left: 100%;
 
   .nav-down {
     border-radius: 50%;
@@ -149,6 +150,15 @@ div#p1{
 
     width: 360px;
     height: 640px;
+
+    //-webkit-transform: rotateY(120deg);
+    //-moz-transform: rotateY(120deg);
+    //-ms-transform: rotateY(120deg);
+    transform: rotateY(90deg);
+
+    //-webkit-transition: all 1s ease-in-out;
+    //-moz-transition: all 1s ease-in-out;
+    transition: all .3s linear;
 
     .c1{
       box-sizing: border-box;
@@ -281,5 +291,26 @@ div#p1{
         }
       }
     }
+  }
+
+  #demo_mask{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 360px;
+    height: 640px;
+
+    background-color: #aaa;
+  }
+
+  .rotateOut{
+    //-webkit-transition: all 0.5s linear;
+    //-moz-transition: all 0.5s linear;
+    transition: all 0.3s linear;
+
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
   }
 }

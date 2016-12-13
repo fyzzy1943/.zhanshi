@@ -1,6 +1,6 @@
 <nav class="main">
   <ul class="left">
-    <li><a href="{{ url('home') }}">公司总览</a></li>
+    <li><a href="{{ url('company') }}">公司总览</a></li>
     <li><a href="{{ url('products') }}">产品总览</a></li>
     <li><a href="{{ url('vision') }}">服务愿景</a></li>
   </ul>

@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-  <div id="p1" class="animated slideInRight">
+  <div id="p1">
 
     <div id="chart1"></div>
 
@@ -121,6 +121,11 @@
 
   <script>
     $(function(){
+      $('#p1').animate({marginLeft:'0'}, 1000, 'swing');
+
+      var demo_mask = $('#demo_mask');
+      var demo = $('#demo');
+
       $('.c1').click(function(){
         $('#s1').modal('show');
       });
@@ -129,6 +134,12 @@
       });
       $('.c4').click(function(){
         $('#s3').modal('show');
+      }).PageSwitch({
+        direction:'horizontal',
+        easing:'ease-in',
+        duration:1000,
+        autoPlay:true,
+        loop:'true'
       });
       $('.c5,.c6').click(function(){
         $('#s4').modal('show');
@@ -136,15 +147,31 @@
       $('.c7').click(function(){
         $('#s5').modal('show');
       });
+
+      demo_mask.click(function() {
+//        demo_mask.animate({transform:'rotateY(100deg)'}, 1000, 'swing');
+//        demo_mask.rotate(45);
+        demo_mask.addClass('rotateOut');
+        setTimeout(function() {
+          demo.css({
+            transform: 'rotateY(0deg)',
+            boxShadow: '0 0 3px 3px #ccc,0 0 7px 7px #ddd,0 0 11px 11px #eee'
+          });
+        }, 299);
+
+
+
+//        demo_mask.animate({  textIndent: 0 }, {
+//          step: function(now,fx) {
+//            $(this).css('-webkit-transform','rotateY(360deg)');
+//          },
+//          duration:'slow'
+//        },'linear');
+      });
     });
 
-    $(".c4").PageSwitch({
-      direction:'horizontal',
-      easing:'ease-in',
-      duration:1000,
-      autoPlay:true,
-      loop:'true'
-    });
+
+
 
     function randomData() {
       return Math.round(Math.random()*50);

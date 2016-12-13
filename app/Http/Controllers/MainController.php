@@ -18,6 +18,13 @@ class MainController extends Controller
         ]);
     }
 
+    public function company()
+    {
+        return view('company', [
+            'title' => '公司总览'
+        ]);
+    }
+
     public function products()
     {
         return view('products_2', [
