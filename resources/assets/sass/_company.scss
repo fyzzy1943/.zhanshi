@@ -11,4 +11,42 @@ div#company{
     width: 100%;
     height: 100%;
   }
+
+  #introduce{
+    position: absolute;
+    width: 300px;
+
+    top: 100px;
+    //left: 50px;
+
+    color: #e1e2e3;
+    text-align: justify;
+
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 1px 1px #bbb;
+
+    padding: 20px;
+
+    h3{
+      padding: 11px 0;
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .go-next{
+    position: absolute;
+
+    right: 150px;
+    bottom: 80px;
+
+    text-decoration: none;
+    color: #e1e2e3;
+    box-shadow: 0 0 1px 1px #bbb;
+
+    padding: 5px;
+  }
 }

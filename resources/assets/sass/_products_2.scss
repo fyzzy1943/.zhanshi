@@ -1,5 +1,21 @@
 $pros2__margin_bottom : 55px;
 
+body, html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: "微软雅黑";
+
+  min-width: 1000px;
+}
+
+div#pros2_bk{
+  background-color: #404a59;
+  width: 100%;
+  height: 100%;
+}
+
 div#pros2{
   position: relative;
   width: 100%;
@@ -7,6 +23,8 @@ div#pros2{
 
   //background-color: #f1f2f3;
   overflow-y: scroll;
+
+  background-color: white;
 
   #com{
     position: absolute;
@@ -23,6 +41,7 @@ div#pros2{
     0 0 7px 7px #ddd,
     0 0 11px 11px #eee;
   }
+
 
   #ps1{
     display: none;
@@ -107,6 +126,13 @@ div#pros2{
     0 0 3px 3px #ccc,
     0 0 7px 7px #ddd,
     0 0 11px 11px #eee;
+  }
+
+  #go_next{
+    display: none;
+    position: absolute;
+    right: 120px;
+    top: 1760px;
   }
 }
 

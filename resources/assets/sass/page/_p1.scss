@@ -13,17 +13,6 @@ $width_section : 370px;
   border: 0;
 }
 
-body, html{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-
-  min-width: 1000px;
-}
-
-
 div#p1{
   position: relative;
   width: 100%;
@@ -94,12 +83,11 @@ div#p1{
 
   #achievement{
     top: 770px;
-    left: 50%;
+    left: 100px;
     width: 1000px;
     height: 270px;
     background-color: #fcfcfc;
 
-    margin-left: -500px;
     margin-bottom: 20px;
 
     //filter:alpha(opacity=67);

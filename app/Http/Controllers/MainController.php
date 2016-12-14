@@ -54,6 +54,7 @@ class MainController extends Controller
             'zx' => ['p3', '国土在线'],
             'kyw' => ['p4', '<a href="http://ko1w.com/" target="_blank">矿易网</a>'],
             'dyw' => ['p5', '<a href="http://di1w.com/" target="_blank">地易网</a>'],
+            'other' => ['p6', '其它产品'],
         ];
 
         return view("product.{$links[$code][0]}", [

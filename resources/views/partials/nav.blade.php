@@ -10,7 +10,7 @@
     <li><a href="#">不动产证书</a></li>
     <li><a href="#">预警系统</a></li>
     <li><a href="{{ url('product/dp') }}">国土大屏</a></li>
-    <li><a href="{{ url('product/yz') }}">其他产品</a></li>
+    <li><a href="{{ url('product/other') }}">其他产品</a></li>
     {{--<li><a href="{{ url('product/zx') }}">国土在线</a></li>--}}
     {{--<li><a href="{{ url('product/kyw') }}">矿易网</a></li>--}}
     {{--<li><a href="{{ url('product/dyw') }}">地易网</a></li>--}}

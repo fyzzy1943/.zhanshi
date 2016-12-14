@@ -281,11 +281,25 @@ div#about {
     width: 370px;
     margin-left: -185px; }
 
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: "微软雅黑";
+  min-width: 1000px; }
+
+div#pros2_bk {
+  background-color: #404a59;
+  width: 100%;
+  height: 100%; }
+
 div#pros2 {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  background-color: white; }
   div#pros2 #com {
     position: absolute;
     width: 200px;
@@ -344,6 +358,11 @@ div#pros2 {
     margin-bottom: 55px;
     border-radius: 5px;
     box-shadow: 0 0 1px 1px #bbb, 0 0 3px 3px #ccc, 0 0 7px 7px #ddd, 0 0 11px 11px #eee; }
+  div#pros2 #go_next {
+    display: none;
+    position: absolute;
+    right: 120px;
+    top: 1760px; }
 
 nav.pros2-nav {
   position: fixed;
@@ -384,19 +403,33 @@ div#company {
     position: absolute;
     width: 100%;
     height: 100%; }
+  div#company #introduce {
+    position: absolute;
+    width: 300px;
+    top: 100px;
+    color: #e1e2e3;
+    text-align: justify;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 1px 1px #bbb;
+    padding: 20px; }
+    div#company #introduce h3 {
+      padding: 11px 0;
+      font-size: 20px; }
+    div#company #introduce p {
+      font-size: 16px; }
+  div#company .go-next {
+    position: absolute;
+    right: 150px;
+    bottom: 80px;
+    text-decoration: none;
+    color: #e1e2e3;
+    box-shadow: 0 0 1px 1px #bbb;
+    padding: 5px; }
 
 * {
   margin: 0;
   padding: 0;
   border: 0; }
-
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-  min-width: 1000px; }
 
 div#p1 {
   position: relative;
@@ -449,11 +482,10 @@ div#p1 {
       text-indent: 2em; }
   div#p1 #achievement {
     top: 770px;
-    left: 50%;
+    left: 100px;
     width: 1000px;
     height: 270px;
     background-color: #fcfcfc;
-    margin-left: -500px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 5px 5px #ccc;
     -webkit-box-shadow: 1px 1px 5px 5px #ccc;
@@ -596,14 +628,6 @@ div#p1 {
     -webkit-transform: rotateY(90deg);
     transform: rotateY(90deg); }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-  min-width: 1000px; }
-
 div#p2 {
   position: relative;
   width: 100%;
@@ -670,14 +694,6 @@ div#p2 {
       text-align: justify;
       text-indent: 0; }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-  min-width: 1000px; }
-
 div#p3 {
   position: relative;
   width: 100%;
@@ -726,14 +742,6 @@ div#p3 {
       padding: 0 17px 3px;
       text-align: justify;
       text-indent: 2em; }
-
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-  min-width: 1000px; }
 
 div#p4 {
   position: relative;
@@ -784,14 +792,6 @@ div#p4 {
       text-align: justify;
       text-indent: 2em; }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-  font-family: "微软雅黑";
-  min-width: 1000px; }
-
 div#p5 {
   position: relative;
   width: 100%;
@@ -840,5 +840,246 @@ div#p5 {
       padding: 0 17px 3px;
       text-align: justify;
       text-indent: 2em; }
+
+div#p6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  div#p6 #go_rotate {
+    position: absolute;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    bottom: 0;
+    margin-left: -50px; }
+  div#p6 #all {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom; }
+  div#p6 #op2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: #fff; }
+    div#p6 #op2 > img {
+      position: absolute;
+      top: 70px;
+      left: 67px; }
+    div#p6 #op2 #demo {
+      position: absolute;
+      height: 500px;
+      width: 700px;
+      top: 90px;
+      left: 566px;
+      z-index: 10;
+      box-shadow: 2px 2px 7px 1px #ccc; }
+      div#p6 #op2 #demo img {
+        margin: 20px auto; }
+    div#p6 #op2 section {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      background-color: #fafbfc;
+      width: 300px;
+      z-index: 10;
+      border-radius: 7px;
+      box-shadow: 2px 2px 7px 1px #ccc;
+      -webkit-box-shadow: 2px 2px 7px 1px #ccc;
+      -moz-box-shadow: 2px 2px 7px 1px #ccc;
+      filter: alpha(opacity=87);
+      -moz-opacity: 0.87;
+      opacity: 0.87; }
+      div#p6 #op2 section > h3 {
+        margin: 0;
+        padding: 9px 0 9px 21px;
+        box-sizing: border-box;
+        background-color: #e24a1e;
+        color: #fff;
+        font: 18px/18px "微软雅黑";
+        width: 100%;
+        /* Gecko browsers */
+        /* Webkit browsers */
+        border-radius: 7px;
+        /* W3C syntax */ }
+    div#p6 #op2 #achievement {
+      top: 70px;
+      right: 10px;
+      height: 610px; }
+      div#p6 #op2 #achievement #achievement1 {
+        width: 300px;
+        height: 270px;
+        margin-top: 10px; }
+      div#p6 #op2 #achievement #achievement2 {
+        width: 300px;
+        height: 270px;
+        margin-top: 10px; }
+    div#p6 #op2 #introduction {
+      top: 270px;
+      left: 83px;
+      width: 430px; }
+      div#p6 #op2 #introduction div.text {
+        padding: 0 17px 3px;
+        text-align: justify;
+        text-indent: 0; }
+  div#p6 #op3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    z-index: 5;
+    background-color: #fff;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+    div#p6 #op3 > img {
+      position: absolute;
+      top: 53px;
+      left: 523px; }
+    div#p6 #op3 section {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      background-color: #fafbfc;
+      width: 300px;
+      z-index: 10;
+      border-radius: 7px;
+      box-shadow: 2px 2px 7px 1px #ccc;
+      -webkit-box-shadow: 2px 2px 7px 1px #ccc;
+      -moz-box-shadow: 2px 2px 7px 1px #ccc;
+      filter: alpha(opacity=87);
+      -moz-opacity: 0.87;
+      opacity: 0.87; }
+      div#p6 #op3 section > h3 {
+        margin: 0;
+        padding: 9px 0 9px 21px;
+        box-sizing: border-box;
+        background-color: #e24a1e;
+        color: #fff;
+        font: 18px/18px "微软雅黑";
+        width: 100%;
+        /* Gecko browsers */
+        /* Webkit browsers */
+        border-radius: 7px 7px 0 0;
+        /* W3C syntax */ }
+      div#p6 #op3 section div.text {
+        padding: 0 17px 0;
+        text-align: justify;
+        text-indent: 2em; }
+    div#p6 #op3 #introduction {
+      top: 83px;
+      left: 70px;
+      width: 446px;
+      margin-bottom: 30px; }
+      div#p6 #op3 #introduction div.text {
+        padding: 0 17px 3px;
+        text-align: justify;
+        text-indent: 2em; }
+  div#p6 #op4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #fff; }
+    div#p6 #op4 > img {
+      position: absolute;
+      top: 42px;
+      right: 78px; }
+    div#p6 #op4 section {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      background-color: #e9e9e9;
+      width: 300px;
+      z-index: 10;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px 1px #aaa;
+      -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+      -moz-box-shadow: 2px 2px 5px 1px #aaa;
+      filter: alpha(opacity=87);
+      -moz-opacity: 0.87;
+      opacity: 0.87; }
+      div#p6 #op4 section > h3 {
+        margin: 0;
+        padding: 9px 0 9px 21px;
+        box-sizing: border-box;
+        background-color: #1b4089;
+        color: #fff;
+        font: 18px/18px "微软雅黑";
+        width: 100%;
+        /* Gecko browsers */
+        /* Webkit browsers */
+        border-radius: 7px 7px 0 0;
+        /* W3C syntax */ }
+      div#p6 #op4 section div.text {
+        padding: 0 17px 0;
+        text-align: justify;
+        text-indent: 2em; }
+    div#p6 #op4 #introduction {
+      top: 98px;
+      left: 196px;
+      width: 377px;
+      margin-bottom: 30px; }
+      div#p6 #op4 #introduction div.text {
+        padding: 0 17px 3px;
+        text-align: justify;
+        text-indent: 2em; }
+  div#p6 #op5 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    z-index: 1;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-color: #fff; }
+    div#p6 #op5 > img {
+      position: absolute;
+      top: 42px;
+      left: 92px; }
+    div#p6 #op5 section {
+      position: absolute;
+      display: block;
+      box-sizing: border-box;
+      background-color: #e9e9e9;
+      width: 300px;
+      z-index: 10;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px 1px #aaa;
+      -webkit-box-shadow: 2px 2px 5px 1px #aaa;
+      -moz-box-shadow: 2px 2px 5px 1px #aaa;
+      filter: alpha(opacity=87);
+      -moz-opacity: 0.87;
+      opacity: 0.87; }
+      div#p6 #op5 section > h3 {
+        margin: 0;
+        padding: 9px 0 9px 21px;
+        box-sizing: border-box;
+        background-color: #ea581a;
+        color: #fff;
+        font: 18px/18px "微软雅黑";
+        width: 100%;
+        /* Gecko browsers */
+        /* Webkit browsers */
+        border-radius: 7px 7px 0 0;
+        /* W3C syntax */ }
+      div#p6 #op5 section div.text {
+        padding: 0 17px 0;
+        text-align: justify;
+        text-indent: 2em; }
+    div#p6 #op5 #introduction {
+      top: 98px;
+      right: 177px;
+      width: 377px;
+      margin-bottom: 30px; }
+      div#p6 #op5 #introduction div.text {
+        padding: 0 17px 3px;
+        text-align: justify;
+        text-indent: 2em; }
 
 /*# sourceMappingURL=main.css.map */

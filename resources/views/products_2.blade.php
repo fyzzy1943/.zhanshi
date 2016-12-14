@@ -8,26 +8,26 @@
 @endsection
 
 @section('content')
-
+<div id="pros2_bk">
   <div id="pros2" class="animated slideInUp">
     <button class="btn" id="all-show">全部显示</button>
-    <button class="btn btn-danger" id="go-next">国土大屏</button>
+    <a href="/product/dp" class="btn btn-danger" id="go_next">国土大屏</a>
     <div id="com">
       中地数讯
     </div>
-    <div id="ps1">
+    <div id="ps1" class="intro">
       国土大屏
     </div>
-    <div id="ps2">
+    <div id="ps2" class="intro">
       移动一张图
     </div>
-    <div id="ps3">
+    <div id="ps3" class="intro">
       国土在线
     </div>
-    <div id="ps4">
+    <div id="ps4" class="intro">
       矿易网
     </div>
-    <div id="ps5">
+    <div id="ps5" class="intro">
       地易网
     </div>
   </div>
@@ -50,6 +50,7 @@
       <h3>地易网</h3>
     </div>
   </nav>
+</div>
 
   <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -61,6 +62,7 @@
       var ps3 = $('#ps3');
       var ps4 = $('#ps4');
       var ps5 = $('#ps5');
+      var next = $('#go_next');
 
       var nav1 = $('#nav1');
       var nav2 = $('#nav2');
@@ -108,7 +110,9 @@
         });
       });
       ps4.click(function() {
-        ps5.fadeIn('slow');
+        ps5.fadeIn('slow', function() {
+          next.fadeIn('slow');
+        });
         nav5.animate({marginTop:'0'}).mouseenter(function() {
           nav5.animate({marginTop:bottom_nav_height-nav5_height}, 'fast');
         }).mouseleave(function() {
@@ -121,7 +125,9 @@
           ps2.fadeIn('slow', function() {
             ps3.fadeIn('slow', function() {
               ps4.fadeIn('slow', function() {
-                ps5.fadeIn('slow');
+                ps5.fadeIn('slow', function() {
+                  next.fadeIn('slow');
+                });
               });
             });
           });

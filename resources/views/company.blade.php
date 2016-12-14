@@ -11,6 +11,14 @@
   <div id="company">
     <div id="bmap"></div>
 
+    <div id="introduce">
+      <h3>北京中地数讯文化传媒有限公司</h3>
+      <p>北京中地数讯文化传媒有限公司成立于2014年7月29日，是国土资源部直属事业单位中国国土资源报社下属科技公司，相继在湖南、广东和四川等省份成立办事处，2016年4月8日在北京股权交易中心挂牌。</p>
+
+    </div>
+
+    <a href="/products" class="go-next">产品介绍</a>
+
   </div>
 
   <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
@@ -33,9 +41,9 @@
 
     var AllDate = [
       [{name:'北京中地数讯文化传媒有限公司'}, {name:'北京中地数讯文化传媒有限公司',value:95}],
-      [{name:'北京中地数讯文化传媒有限公司'}, {name:'湖南省兰德信息产业有限公司',value:35}],
-      [{name:'北京中地数讯文化传媒有限公司'}, {name:'广东省地创信息科技有限公司',value:35}],
-      [{name:'北京中地数讯文化传媒有限公司'}, {name:'四川省鼎玉铉信息技术有限公司',value:35}]
+      [{name:'北京中地数讯文化传媒有限公司'}, {name:'湖南省兰德信息产业有限公司',value:55}],
+      [{name:'北京中地数讯文化传媒有限公司'}, {name:'广东省地创信息科技有限公司',value:55}],
+      [{name:'北京中地数讯文化传媒有限公司'}, {name:'四川省鼎玉铉信息技术有限公司',value:55}]
     ];
 
     var convertData = function (data) {
@@ -58,7 +66,7 @@
     var option = {
       backgroundColor: '#404a59',
       title: {
-        text: 'yo yo'
+        text: ''
       },
       geo: {
         map: 'china',

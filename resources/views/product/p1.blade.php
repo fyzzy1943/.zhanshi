@@ -71,7 +71,11 @@
       <div id="achievement2"></div>
     </section>
 
-    <div id="demo_mask"></div>
+    <a href="/product/other"></a>
+
+    <div id="demo_mask">
+      大屏整体图片
+    </div>
 
     <div id="demo">
       <div class="c1">
