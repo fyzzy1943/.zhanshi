@@ -11,6 +11,7 @@
 @section('content')
   <div id="p6">
     <button id="go_rotate">X</button>
+    <a href="/vision" id="go_vista">服务愿景</a>
 
     <div id="all">
       <div id="op2">

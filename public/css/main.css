@@ -228,6 +228,17 @@ div#vision {
     height: auto;
     width: 370px;
     margin-left: -185px; }
+  div#vision article {
+    position: absolute;
+    box-sizing: border-box;
+    top: 120px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    height: 350px;
+    border-radius: 7px;
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.8); }
 
 body, html {
   width: 100%;
@@ -858,6 +869,21 @@ div#p6 {
     left: 50%;
     bottom: 0;
     margin-left: -50px; }
+  div#p6 #go_vista {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+    margin-top: -100px;
+    background-color: #1b4089;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    width: 32px;
+    height: 155px;
+    padding: 30px 0 0 10px;
+    border-radius: 7px 0 0 7px; }
   div#p6 #all {
     position: relative;
     width: 100%;

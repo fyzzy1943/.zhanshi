@@ -74,4 +74,21 @@ div#vision{
     width: 370px;
     margin-left: -185px;
   }
+
+  article{
+    position: absolute;
+    box-sizing: border-box;
+
+    top: 120px;
+    left: 50%;
+    margin-left: -300px;
+
+    width: 600px;
+    height: 350px;
+
+    border-radius: 7px;
+    padding: 60px 20px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
