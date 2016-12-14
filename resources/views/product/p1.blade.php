@@ -71,7 +71,7 @@
       <div id="achievement2"></div>
     </section>
 
-    <a href="/product/other"></a>
+    <a id="go_other" class="btn btn-default" href="/product/other">其它产品</a>
 
     <div id="demo_mask">
       大屏整体图片

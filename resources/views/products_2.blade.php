@@ -11,7 +11,7 @@
 <div id="pros2_bk">
   <div id="pros2" class="animated slideInUp">
     <button class="btn" id="all-show">全部显示</button>
-    <a href="/product/dp" class="btn btn-danger" id="go_next">国土大屏</a>
+    <button class="btn btn-danger" id="go_next">国土大屏</button>
     <div id="com">
       中地数讯
     </div>
@@ -165,8 +165,8 @@
 
       });
 
-      $('#go-next').click(function() {
-        $('body').animate({marginLeft:'-100%'}, 1000, 'swing', function() {
+      next.click(function() {
+        $('body').animate({marginLeft:'-100%'}, 700, 'linear', function() {
           location.href='/product/dp';
         });
 //        $('body').addClass('animated slideOutLeft', function() {

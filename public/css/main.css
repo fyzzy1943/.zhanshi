@@ -622,6 +622,10 @@ div#p1 {
     width: 360px;
     height: 640px;
     background-color: #aaa; }
+  div#p1 #go_other {
+    position: absolute;
+    top: 970px;
+    right: 100px; }
   div#p1 .rotateOut {
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
